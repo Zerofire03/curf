@@ -24,7 +24,11 @@
     $graph = new Graph();
     $graph->setAccessToken($accessToken);
 
+    $users = $graph->createRequest("GET", "/users")
+                    ->setReturnType(Model\User::class)
+                    ->execute();
 
+    print_r($users);
     /*
     $groups = $graph->createRequest("GET", "/groups?\$top=999")
                     ->setReturnType(Model\Group::class)
@@ -57,7 +61,7 @@
     {
         //echo $count . " - " . $group->getDisplayName() . " - " . $group->getGroupTypes() . "<br>";
         //echo $count . " - " . $group->getDisplayName() . "<br>";
-        echo $count . " - " . $group . "<br>";
+        //echo $count . " - " . $group . "<br>";
         $count++;
     }
 

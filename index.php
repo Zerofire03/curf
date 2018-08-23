@@ -75,6 +75,7 @@
 <html>
     <head>
         <title>CURF Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -144,7 +145,7 @@
                             </select>
                         </label>
                     </div>
-                    <div class="supervisory">
+                    <div class="supervisor">
                         <label>
                             Supervisor<span style="color: red">*</span>
                             <select name="supervisor">
